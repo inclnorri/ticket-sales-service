@@ -1,0 +1,236 @@
+.tickets-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.ticket-card {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    background: white;
+    font-family: Vollkorn, serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+.ticket-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff594b;
+}
+
+.ticket-header {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px dashed #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.ticket-body {
+    padding: 20px;
+}
+
+.event-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.event-details {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px dashed #e0e0e0;
+    font-size: 14px;
+    color: #666;
+}
+
+.date {
+    font-size: 17px;
+    color: #333;
+}
+
+.time {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff594b;
+}
+
+.event-title a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.event-title a:hover {
+    color: #ff594b;
+}
+
+/* Navigation menu styles */
+.menu-item a {
+    text-decoration: none;
+    color: #333333;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.menu-item a:hover {
+    color: #ff594b;
+}
+
+.add-to-cart-form {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.quantity-input:focus {
+    border-color: #ff594b;
+    outline: none;
+}
+
+.add-to-cart-button {
+    background-color: #ff594b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #ff4433;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.section-header h1 {
+    font-family: Vollkorn, serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* TICKETS   */
+.opera-tickets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.opera-ticket {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    background: white;
+    font-family: Vollkorn, serif;
+}
+
+.opera-ticket .ticket-header {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px dashed #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opera-ticket .ticket-body {
+    padding: 20px;
+}
+
+.opera-ticket .event-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.opera-ticket .event-details {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.opera-ticket .event-meta {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    border-top: 1px dashed #e0e0e0;
+    font-size: 14px;
+    color: #666;
+}
+
+.date {
+    font-size: 17px;
+    color: #333;
+}
+
+.time {
+    font-size: 14px;
+    color: #666;
+}
+
+.event-title a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.event-title a:hover {
+    color: #ff594b;
+} 

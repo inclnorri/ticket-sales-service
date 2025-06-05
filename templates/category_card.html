@@ -1,0 +1,12 @@
+<div class="{{ category.slug }}">
+    <div class="category-header">
+        <div class="category-title" style="text-transform: uppercase;"><a href="{{ url_for(category.slug) }}">{{ category.name }}</a></div>
+    </div>
+    <div class="category-body">
+        <div class="event-title">{{ category.description }}</div>
+        <img src="../static/img/{{ category.slug }}.jpg" alt="{{ category.name }}" style="width: 100%; height: {{ category.image_height }}px;">
+        <div class="event-meta">
+            <span class="team">Team Snoopy</span>
+        </div>
+    </div>
+</div> 

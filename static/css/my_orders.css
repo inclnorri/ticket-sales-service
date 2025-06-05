@@ -1,0 +1,99 @@
+.orders-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.orders-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.order-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.order-header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.order-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-number {
+    font-weight: bold;
+    color: #333;
+}
+
+.order-date {
+    color: #666;
+}
+
+.order-status {
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+.order-items {
+    padding: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.item-title {
+    flex: 1;
+    font-weight: 500;
+}
+
+.item-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.item-price {
+    color: #666;
+}
+
+.item-quantity {
+    color: #666;
+}
+
+.item-total {
+    font-weight: 500;
+    color: #333;
+}
+
+.order-footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
+}
+
+.order-total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+} 

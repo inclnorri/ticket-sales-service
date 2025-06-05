@@ -1,0 +1,86 @@
+.footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    font-family: Vollkorn, serif;
+    font-size: 17px;
+}   
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-section h3 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: #333;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer-section .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-section .social-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.footer-section .subscribe-btn {
+    background-color: #ff594b;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+
+.footer-section .subscribe-btn:hover {
+    background-color: #e14a3c;
+} 
+
+.footer-section p {
+    font-size: 17px;
+    color: #333;
+}
+
+.footer-section .social-links i {
+    color: #ff594b;
+}
+
+.footer-section h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a4a4a4;
+}

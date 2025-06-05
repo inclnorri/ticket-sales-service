@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ ticket.title }} - Snoopy Ticket Sales
+{% endblock %}
+
+{% block navigation %}
+<nav class="menu">
+    <span class="menu-item"><a href="{{ url_for('opera') }}">opera</a></span>
+    <span class="menu-item"><a href="{{ url_for('index') }}">home</a></span>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container-description">
+    <div class="description">
+        <h1>About the performance</h1>
+        <p>{{ ticket.description }}</p>
+    </div>
+
+    <div class="ticket-description">
+        <h1 class="product-title" style="text-transform: uppercase;">{{ ticket.title }}</h1>
+        <div class="product-price">$ {{ "{:.2f}".format(ticket.price) }}</div>
+        <form method="POST" action="{{ url_for('add_to_cart') }}" class="add-to-cart-form">
+            <input type="hidden" name="ticket_id" value="{{ ticket.id }}">
+            <label class="quantity-label">Quantity:</label>
+            <input class="quantity-input" type="number" name="quantity" id="quantity" value="1" min="1">
+            <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+        </form>
+        <div class="cart-actions">
+            <div class="action-buttons">
+                <a href="{{ url_for('basket') }}" class="view-cart-btn">View cart</a>
+                <a href="{{ url_for('opera') }}" class="continue-shopping-btn">Continue shopping</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

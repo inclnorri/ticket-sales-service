@@ -1,0 +1,176 @@
+.content-basket {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.basket-container {
+    font-family: Vollkorn, serif;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.basket-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.basket-table {
+    width: 100%;
+}
+
+.basket-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-item {
+    font-size: 16px;
+    color: #333;
+    font-family: Vollkorn, serif;
+    text-align: right;
+}
+
+.header-item.header-title {
+    text-align: left;
+}
+
+hr {
+    display: none;
+}
+
+.basket-items {
+    padding: 10px 0;
+}
+
+.basket-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.item-info {
+    grid-column: 1;
+}
+
+.item-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.basket-price {
+    grid-column: 2;
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+
+.basket-quantity {
+    grid-column: 3;
+    text-align: right;
+}
+
+.basket-total {
+    grid-column: 4;
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+
+.basket-quantity-input {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #ff594b;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+    width: fit-content;
+}
+
+.remove-button:hover {
+    text-decoration: underline;
+}
+
+.basket-total-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.total-text {
+    margin-bottom: 10px;
+}
+
+.total-amount {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    padding: 10px 25px;
+    background-color: #ff594b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+}
+
+.checkout-btn:hover {
+    background-color: #e14a3c;
+}
+
+.tickets {
+    text-align: center;
+    padding: 30px 0;
+    color: #666;
+}
+
+.update-quantity {
+    background-color: #ff594b;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.update-quantity:hover {
+    background-color: #e14a3c;
+}
+
+.quantity-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+

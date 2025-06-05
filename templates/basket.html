@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Your Cart - Snoopy Ticket Sales
+{% endblock %}
+
+{% block navigation %}
+<nav class="menu">
+    <span class="menu-item"><a href="{{ url_for('index') }}">home</a></span>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="basket-container">
+    <h2>Your Cart</h2>
+    <div class="basket-table">
+        <div class="basket-header">
+            <div class="header-item header-title">Title</div>
+            <div class="header-item">Price</div>
+            <div class="header-item">Quantity</div>
+            <div class="header-item">Total</div>
+        </div>
+        <div class="basket-items">
+            {% if cart_items %}
+                {% for item in cart_items %}
+                <div class="basket-item">
+                    <div class="item-info">
+                        <div class="item-title">{{ item.ticket.title }}</div>
+                        <form action="{{ url_for('remove_from_cart', item_id=item.ticket.id) }}" method="POST">
+                            <button type="submit" class="remove-button">Remove</button>
+                        </form>
+                    </div>
+                    <div class="basket-price">${{ "{:.2f}".format(item.ticket.price) }}</div>
+                    <div class="basket-quantity">
+                        <form action="{{ url_for('update_cart', item_id=item.ticket.id) }}" method="POST" class="quantity-form">
+                            <input class="basket-quantity-input" type="number" name="quantity" value="{{ item.quantity }}" min="1" onchange="this.form.submit()">
+                        </form>
+                    </div>
+                    <div class="basket-total">${{ "{:.2f}".format(item.total) }}</div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>Your cart is empty.</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="basket-total-footer">
+        <div class="total-text">Subtotal</div>
+        <div class="total-amount">${{ "{:.2f}".format(total_price) }}</div>
+        {% if cart_items %}
+        <button class="checkout-btn" onclick="alert('Checkout functionality coming soon!')">Check Out</button>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

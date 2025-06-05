@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %} 
+Register - Snoopy Ticket Sales
+{% endblock %}
+
+{% block top_header %}
+{% endblock %}
+
+{% block navigation %}
+<nav class="menu">
+    <span class="menu-item"><a href="{{ url_for('index') }}">home</a></span>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="register-form">
+    <h2>Register</h2>
+    <form method="POST" action="{{ url_for('register') }}">
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+    </form>
+    <div class="login">
+        <p>Already have an account? <a href="{{ url_for('login') }}"> Login</a></p>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+

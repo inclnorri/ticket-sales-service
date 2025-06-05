@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Art & Museum - Snoopy Ticket Sales
+{% endblock %}
+
+{% block navigation %}
+<nav class="menu">
+    <span class="menu-item"><a href="{{ url_for('opera') }}">opera</a></span>
+    <span class="menu-item"><a href="{{ url_for('index') }}">home</a></span>
+    <span class="menu-item"><a href="{{ url_for('tour') }}">tours</a></span>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="opera-tickets">
+    {% for ticket in tickets %}
+        {% include "ticket_card.html" %}
+    {% endfor %}
+</div>
+{% endblock %}

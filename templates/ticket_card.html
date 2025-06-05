@@ -1,0 +1,14 @@
+<div class="opera-ticket">
+    <div class="ticket-header">
+        <div class="date">{{ ticket.date }}</div>
+        <div class="time">{{ ticket.time }}</div>
+    </div>
+    <div class="ticket-body">
+        <div class="event-title">
+            <a href="{{ url_for('ticket_description', ticket_id=ticket.id) }}">{{ ticket.title }}</a>
+        </div>
+        <div class="event-details">
+            {{ ticket.short_description }}
+        </div>
+    </div>
+</div>
